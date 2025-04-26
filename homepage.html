@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoSponsors - Connecting Athletes with Sponsors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GoSponsors</h1>
+        <p>Helping athletes find sponsors to achieve their dreams</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#athletes">Athletes</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We connect young athletes in need of financial support with sponsors who want to make a difference.</p>
+    </section>
+
+    <section id="athletes">
+        <h2>Athlete Profiles</h2>
+        <form id="athlete-form">
+            <h3>Submit Your Profile</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="sport">Sport:</label>
+            <input type="text" id="sport" name="sport" required>
+            <label for="request">Request:</label>
+            <textarea id="request" name="request" required></textarea>
+            <label for="video">Upload Highlight Video:</label>
+            <input type="file" id="video" name="video" accept="video/*">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="sponsors">
+        <h2>For Sponsors</h2>
+        <p>Browse athlete profiles and support their journey. Pay a small fee to access contact details.</p>
+        <div id="profiles">
+            <!-- Athlete profiles will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:support@gosponsors.com">support@gosponsors.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
